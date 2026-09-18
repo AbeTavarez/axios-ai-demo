@@ -42,7 +42,7 @@ app.post('/api/generate', async (req, res) => {
 
         const result = await groqClient.post('/responses', payload);
         
-        console.log(result.data);
+        // console.log(result.data);
         
         res.status(201).json({output: result.data.output});
     
